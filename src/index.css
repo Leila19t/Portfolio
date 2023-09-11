@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --dark-background: #07080A;
+  --light-background: #131313;
+  --card-background: #262626;
+  --accent-color: #59DBC5;
+  --icon-color: #CDCDCD;
+  --font-color: #FBFBFB;
+}
+
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Mukta', sans-serif;
+}
+
+/* header */
+
+nav{
+  background: var(--dark-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 35px;
+}
+
+nav>h3{
+  color: var(--font-color);
+  font-size: 25px;
+  margin: 0;
+  font-family: Pacifico;
+}
+
+.green{
+  color: var(--accent-color);
+}
+
+.nav-links{
+  display: flex;
+  gap: 25px;
+  align-items: baseline;
+}
+
+.nav-links>a{
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.resume-btn{
+  font-family: 'Mukta', sans-serif;
+  font-weight: 500;
+  padding: 5px 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: var(--accent-color);
+  color: var(--dark-background);
+  border-radius: 5px;
+}
+
+/* home */
+
+.home-container{
+  background-color: var(--dark-background);
+  padding: 40px;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.home-container>h1{
+  font-size: 40px;
+}
+
+.home-container>h3{
+  font-size: 25px;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.social-buttons{
+width:350px;
+margin: 50px auto 0;
+display: flex;
+justify-content: space-between;
+}
+
+.social-buttons>a{
+ font-size: 25px;
+ background: var(--icon-color);
+ padding: 15px;
+ display: flex;
+ border-radius: 50px;
+ color: var(--dark-background);
+}
+
+.certificate-card{
+  width: 400px;
+}
+
+
+
+
