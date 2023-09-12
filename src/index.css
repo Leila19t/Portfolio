@@ -10,11 +10,13 @@
   --font-color: #FBFBFB;
 }
 
-*,*::after,*::before{
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: 'Mukta', sans-serif;
@@ -22,7 +24,7 @@ body{
 
 /* header */
 
-nav{
+nav {
   background: var(--dark-background);
   display: flex;
   justify-content: space-between;
@@ -30,30 +32,30 @@ nav{
   padding: 25px 35px;
 }
 
-nav>h3{
+nav>h3 {
   color: var(--font-color);
   font-size: 25px;
   margin: 0;
   font-family: Pacifico;
 }
 
-.green{
+.green {
   color: var(--accent-color);
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   gap: 25px;
   align-items: baseline;
 }
 
-.nav-links>a{
+.nav-links>a {
   color: var(--font-color);
   text-decoration: none;
   font-weight: 500;
 }
 
-.resume-btn{
+.resume-btn {
   font-family: 'Mukta', sans-serif;
   font-weight: 500;
   padding: 5px 10px;
@@ -68,43 +70,121 @@ nav>h3{
 
 /* home */
 
-.home-container{
+.home-container {
   background-color: var(--dark-background);
   padding: 40px;
   text-align: center;
   color: var(--font-color);
 }
 
-.home-container>h1{
+.home-container>h1 {
   font-size: 40px;
 }
 
-.home-container>h3{
+.home-container>h3 {
   font-size: 25px;
   margin: 0 auto;
-  width: 800px;
+  width: 60%;
+  font-weight: 400;
 }
 
-.social-buttons{
-width:350px;
-margin: 50px auto 0;
-display: flex;
-justify-content: space-between;
+.social-buttons {
+  width: 350px;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.social-buttons>a{
- font-size: 25px;
- background: var(--icon-color);
- padding: 15px;
- display: flex;
- border-radius: 50px;
- color: var(--dark-background);
+.social-buttons>a {
+  font-size: 25px;
+  background: var(--icon-color);
+  padding: 15px;
+  display: flex;
+  border-radius: 50px;
+  color: var(--dark-background);
 }
 
-.certificate-card{
-  width: 400px;
+.certificates-container{
+  text-align: center;
+  background: var(--light-background);
+  padding-top: 35px;
 }
 
+.certificates-container>p{
+  margin-top: 0;
+  color: var(--font-color);
+  font-size: 20px;
+  margin-bottom: 0;
+}
 
+.certificates-container>h3{
+  color: var(--font-color);
+  font-size: 34px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+.certificate-card {
+  width: 25%;
+  background: var(--card-background);
+  padding: 40px 25px 25px 25px;
+  border-radius: 10px;
+  border: 1px solid var(--accent-color);
+  text-align: left;
+  color: var(--font-color);
+  position: relative;
+}
 
+.certificate-card::after{
+  color: #2D2D2D;
+  content: attr(num);
+  display: block;
+  font-size: 80px;
+  line-height: 1;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+.first-certificate{
+  background: var(--accent-color);
+  color: var(--dark-background);
+}
+
+.first-certificate::after{
+  color: #50C6B3;
+}
+
+.cert-icon{
+  font-size: 30px;
+}
+
+.certificate-card>h2{
+  margin-bottom: 8px;
+}
+
+.certificate-card>p{
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 25px;
+  font-size: 18px;
+  letter-spacing: .5px;
+  font-weight: 400;
+}
+
+.line{
+  height: 1.5px;
+  width: 30%;
+  background: var(--font-color);
+}
+
+.first-line{
+  background: var(--dark-background);
+}
+
+.certificates{
+  display: flex;
+  justify-content: space-around;
+  background: var(--light-background);
+  padding: 40px 0;
+}

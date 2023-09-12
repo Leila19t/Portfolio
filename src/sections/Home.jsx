@@ -12,21 +12,26 @@ export default function Home() {
 
     const certificates = [
         {
-            icon: <FaGraduationCap />,
+            icon: <FaGraduationCap className="cert-icon"/>,
             title: "Bachelor in Software Engineering",
-            content: "lorem ipsum fhfu sloif uhe iuhknla iuyhw lihwa kuyw cdlo9s kiwhdb liowdb lawobc akujkbf ausgba khabf, ajhvfa ajhvf lhiaf kugrf kiy w aufb v ufff."
+            content: "With a full scholarship, I graduated in February 2023 with a 3.1/4 GPA, after completing five years of college",
+            num: "01"
         },
         {
-            icon: <FaGlobeEurope />,
+            icon: <FaGlobeEurope className="cert-icon"/>,
             title: "Erasmus+ student exchange certificate",
-            content: "ss"
+            content: "In February 2020, I enrolled in the Erasmus+ student exchange program to study for a semester in Poland.",
+            num: "02"
         },
         {
-            icon: <SiScrimba />,
+            icon: <SiScrimba className="cert-icon"/>,
             title: "'Frontend career path' certificate",
-            content: "ss"
+            content: "by September 2023, I completed a six-month online course on the Scrimba platorm to learn and excell in web development",
+            num: "03"
         }
     ]
+
+    const certificateElements = certificates.map(cer => <CertificateCard icon={cer.icon} title={cer.title} content={cer.content} num={cer.num}/>)
 
     return (
         <div>
@@ -40,12 +45,14 @@ export default function Home() {
                     <a href="#"><AiFillInstagram /></a>
                 </div>
             </div>
-            <div className="certificates">
-                <CertificateCard icon={<FaGraduationCap/>} 
-                                 title={"Bachelor in software engineering"}
-                                 content={""}
-                                 />
+            <div className="certificates-container">
+                <p>ACADEMICS</p>
+                <h3>What <span className="green">I've done</span></h3>
+                <div className="certificates">
+                    {certificateElements}
+                </div>
             </div>
+
         </div>
 
     )
