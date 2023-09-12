@@ -110,14 +110,14 @@ nav>h3 {
   padding-top: 35px;
 }
 
-.certificates-container>p{
+.certificates-container>p,.projects-container>p{
   margin-top: 0;
   color: var(--font-color);
   font-size: 20px;
   margin-bottom: 0;
 }
 
-.certificates-container>h3{
+.certificates-container>h3,.projects-container>h3{
   color: var(--font-color);
   font-size: 34px;
   margin-top: 0;
@@ -187,4 +187,12 @@ nav>h3 {
   justify-content: space-around;
   background: var(--light-background);
   padding: 40px 0;
+}
+
+/* projects */
+
+.projects-container{
+  text-align: center;
+  background: var(--dark-background);
+  padding-top: 35px;
 }

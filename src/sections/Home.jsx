@@ -47,7 +47,7 @@ export default function Home() {
             </div>
             <div className="certificates-container">
                 <p>ACADEMICS</p>
-                <h3>What <span className="green">I've done</span></h3>
+                <h3>What <span className="green">I've done</span>.</h3>
                 <div className="certificates">
                     {certificateElements}
                 </div>
