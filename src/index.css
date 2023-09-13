@@ -196,3 +196,16 @@ nav>h3 {
   background: var(--dark-background);
   padding-top: 35px;
 }
+
+.thumbnail{
+  width: 25%;
+  border: 1px solid var(--accent-color);
+}
+
+.thumbnail>img{
+  margin: 0;
+}
+
+.project-card{
+  background: red;
+}
