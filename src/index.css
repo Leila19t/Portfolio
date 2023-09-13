@@ -195,17 +195,34 @@ nav>h3 {
   text-align: center;
   background: var(--dark-background);
   padding-top: 35px;
+
+}
+
+.inner-projects-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
 }
 
 .thumbnail{
-  width: 25%;
-  border: 1px solid var(--accent-color);
-}
-
-.thumbnail>img{
-  margin: 0;
+  width: 100%;
+  border: 1.5px solid var(--accent-color);
+  border-radius: 10px;
+ 
 }
 
 .project-card{
-  background: red;
+  width: 25%;
+  color: var(--font-color);
+}
+
+.project-card>h3{
+  font-size: 24px;
+}
+
+.project-card>p{
+  line-height: 25px;
+  font-size: 18px;
+  letter-spacing: .5px;
+  font-weight: 400;
 }

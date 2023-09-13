@@ -9,8 +9,12 @@ export default function Projects(){
     return(
         <div className="projects-container">
              <p>PORTFOLIO</p>
-             <h3>Featured <span className="green">projects</span>.</h3>
-             <div>
+             <h3>Featured <span className="green">React projects</span>.</h3>
+             <div className="inner-projects-container">
+                {reactAppElements}
+             </div>
+             <h3>Featured <span className="green">Vanilla JavaScript projects</span>.</h3>
+             <div className="inner-projects-container">
                 {reactAppElements}
              </div>
         </div>
