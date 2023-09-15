@@ -10,7 +10,7 @@ export default function App() {
     <BrowserRouter>
       <Header />
       <Home />
-      <Projects />
+      <Projects id="projects"/>
     </BrowserRouter>
   )
 }

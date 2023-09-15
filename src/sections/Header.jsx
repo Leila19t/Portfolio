@@ -13,7 +13,7 @@ export default function Header() {
                 <HashLink to=''>
                     About me
                 </HashLink>
-                <HashLink to=''>
+                <HashLink to='#projects'>
                     Projects
                 </HashLink>
                 <HashLink to=''>
