@@ -5,18 +5,18 @@ import { skills } from "../data";
 
 export default function About(){
 
-    const skillElements = skills.map(skill=><p className="skill">{skill}</p>)
+    const skillElements = skills.map((skill,index)=><p key={index} className="skill">{skill}</p>)
 
     return(
-        <div className="about-container">
+        <div className="about-container" id="about">
              <p>MY BIO</p>
              <h3>About <span className="green">me</span>.</h3>
              <div className="inner-about-container">
                 <img src={aboutMe}/>
                 <div className="about-text-btn">
-                    <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in massa tempor nec feugiat nisl pretium fusce. Tincidunt eget nullam non nisi est sit amet. Pulvinar mattis nunc sed blandit libero volutpat sed. Condimentum id venenatis a condimentum vitae.</p>
-                    <p className="about-text">Tortor posuere ac ut consequat semper viverra nam libero. Nulla malesuada pellentesque elit eget gravida cum. Eget nullam non nisi est sit amet. Enim tortor at auctor urna nunc. Nulla malesuada pellentesque elit eget gravida cum sociis natoque.</p>
-                    <p className="about-text">Non enim praesent elementum facilisis leo. Fusce ut placerat orci nulla pellentesque dignissim enim. Sagittis eu volutpat odio facilisis mauris. Arcu non sodales neque sodales. Senectus et netus et malesuada fames ac turpis egestas maecenas. Non odio euismod lacinia at quis risus sed vulputate odio.</p>
+                    <p className="about-text">I am a fresh computer science graduate based out of Damascus, Syria. I am also fresh out of a six-month course dedicated to learn frontend web development, so you might say I'm all coded out! I consider myself a "forever student", because I'm fueled by learning new technologies and solving new problems in whatever shape or form they might come in.</p>
+                    <p className="about-text">I also have a website or two that were made on Wordpress. these sites were projects that I have done while I was a foreign exchange student in Poland. I also worked as an IT assistant there for the summer which was very beneficial in terms of learning some new technical concepts. </p>
+                    <p className="about-text">Right now, I am focusing on learning and completing as much projects as I can. But I'm always looking for a new challenge. Reach out to me at <a className="email" href="mailto:tarabih.laila@gmail.com?subject=Hello&body=Hello! let's discuss projects." target="_blank">tarabih.laila@gmail.com</a> and let's connect!</p>
                     <button className="resume-btn">View resume <HiOutlinePaperClip/></button>
                 </div>
              </div>
@@ -24,7 +24,7 @@ export default function About(){
                 <div className="technical-intro">
                     <p>SKILLS</p>
                     <h3>Technical <span className="green">skills</span>.</h3>
-                    <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in massa tempor nec feugiat nisl pretium fusce. Tincidunt eget nullam non nisi est sit amet. Pulvinar mattis nunc sed blandit libero volutpat sed. Condimentum id venenatis a condimentum vitae.</p>
+                    <p className="about-text">I have completed multiple projects for varoius platforms including Android, Web and desktop applications. all of which were coded in multiple platforms including React, Flutter, and multiple languages like Python, JavaScript, and C#. </p>
                 </div>
                 <div className="skills">{skillElements}</div>
              </div>

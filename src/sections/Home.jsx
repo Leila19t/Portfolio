@@ -9,18 +9,18 @@ import { certificates } from "../data";
 
 export default function Home() {
 
-    const certificateElements = certificates.map(cer => <CertificateCard icon={cer.icon} title={cer.title} content={cer.content} num={cer.num}/>)
+    const certificateElements = certificates.map((cer,index) => <CertificateCard key={index} icon={cer.icon} title={cer.title} content={cer.content} num={cer.num}/>)
 
     return (
-        <div>
+        <div id="home">
             <div className="home-container" id="home">
                 <h1>Hi, I am Laila Tarabih</h1>
                 <h3>A fresh <span className="green">frontend developer</span> transforming ideas into stunning digital experiences. Let's create something amazing!</h3>
                 <div className="social-buttons">
-                    <a href="#"><PiGithubLogoFill /></a>
-                    <a href="#"><BiLogoGmail /></a>
-                    <a href="#"><FaLinkedinIn /></a>
-                    <a href="#"><AiFillInstagram /></a>
+                    <a href="https://github.com/laila19t" target="_blank"><PiGithubLogoFill /></a>
+                    <a href="mailto:tarabih.laila@gmail.com?subject=Hello&body=Hello! let's discuss projects." target="_blank"><BiLogoGmail /></a>
+                    <a href="https://www.linkedin.com/in/laila-tarabih-4573709a/" target="_blank"><FaLinkedinIn /></a>
+                    <a href="https://www.instagram.com/laila19t/" target="_blank"><AiFillInstagram /></a>
                 </div>
             </div>
             <div className="certificates-container">

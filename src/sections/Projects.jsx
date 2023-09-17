@@ -6,11 +6,11 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Projects(){
 
-    const reactAppElements = reactApps.map(app => <ProjectCard name={app.name} description={app.description} image={app.image} link={app.link}/>)
-    const JSAppElements = vanillaJSApps.map(app => <ProjectCard name={app.name} description={app.description} image={app.image} link={app.link}/>)
+    const reactAppElements = reactApps.map((app,index) => <ProjectCard key={index} name={app.name} description={app.description} image={app.image} link={app.link}/>)
+    const JSAppElements = vanillaJSApps.map((app,index) => <ProjectCard key={index} name={app.name} description={app.description} image={app.image} link={app.link}/>)
 
     return(
-        <div className="projects-container">
+        <div className="projects-container" id="projects">
              <p>PORTFOLIO</p>
              <h3>Featured <span className="green">React projects</span>.</h3>
              <div className="inner-projects-container">

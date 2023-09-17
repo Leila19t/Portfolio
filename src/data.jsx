@@ -70,4 +70,4 @@ export const vanillaJSApps = [
     },
 ]
 
-export const skills =["React", "JavaScript", "HTML", "CSS", "Firebase", "Flutter/Dart","Python","UI/UX Design"]
+export const skills =["React", "JavaScript", "HTML", "CSS", "Firebase", "Flutter/Dart","Python","Figma","Adobe XD","UI/UX Design"]
