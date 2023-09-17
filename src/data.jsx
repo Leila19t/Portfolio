@@ -69,3 +69,5 @@ export const vanillaJSApps = [
         image: restaurant
     },
 ]
+
+export const skills =["React", "JavaScript", "HTML", "CSS", "Firebase", "Flutter/Dart","Python","UI/UX Design"]
