@@ -356,6 +356,14 @@ nav>h3 {
   position: relative;
 }
 
+.module-title{
+  background: var(--dark-background);
+  border: 2px solid var(--accent-color);
+  color: var(--font-color);
+  border-radius: 0px;
+}
+
+
 .contact-form-right {
   display: flex;
   flex-direction: column;
