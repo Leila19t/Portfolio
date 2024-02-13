@@ -10,7 +10,7 @@ export default function ProjectCard({ name, description, link, image }) {
                 </a>
             </div>
             <h3>{name}</h3>
-            <p>{description}</p>
+            <p dangerouslySetInnerHTML={{ __html: description }} />
         </div>
     )
 }

@@ -223,6 +223,7 @@ nav>h3 {
 .project-card {
   width: 25%;
   color: var(--font-color);
+position: relative;
 }
 
 .project-card>h3 {
@@ -234,6 +235,30 @@ nav>h3 {
   font-size: 18px;
   letter-spacing: .5px;
   font-weight: 400;
+
+}
+
+.marker {
+  position: relative;
+  z-index: 1; /* Ensure the text is above the highlight */
+}
+
+.marker::before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: var(--accent-color);
+  opacity: 0.7;
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+  z-index: -1; /* Ensure the highlight is behind the text */
 }
 
 /* about */

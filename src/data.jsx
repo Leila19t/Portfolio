@@ -31,19 +31,19 @@ export const certificates = [
 export const reactApps = [
     {
         name: "#VANLIFE",
-        description: "Vanlife was my first big project, I had a LOT of practice with react router 6 with it, as well as some other nice features.",
+        description: `Vanlife was my first big project, I had a LOT of practice with <span class="marker">react router 6</span> with it, as well as some other features. Ps. use admin email aaa@aaa.com with password Abcd1234 to view the host pages!`,
         link: "https://vanlife-laila19t.netlify.app/",
         image: vanlife
     },
     {
         name: "Quizzical",
-        description: "Quizzical was a big learning curve for me, I got to practice several React hooks that were alot of fun.",
+        description: "Quizzical was a big learning curve for me, I got to practice several<span class=\"marker\"> React hooks</span> that were alot of fun.",
         link: "https://quizzical-laila19t.netlify.app/",
         image: quizzical
     },
     {
         name: "Travel Journal",
-        description: "Travel journal was a big help in learning how to use react components, and the concepts of composability and reusability.",
+        description: "Travel journal was a big help in learning how to use react components, and the concepts of <span class=\"marker\">composability</span> and <span class=\"marker\">reusability.</span>",
         link: "https://travel-journal-laila19t.netlify.app/",
         image: travelJournal
     },
@@ -52,19 +52,19 @@ export const reactApps = [
 export const vanillaJSApps = [
     {
         name: "Movie Watchlist",
-        description: "Movie watch is a project that made me practice local storage, third party API calls, promises, and data manupilation.",
+        description: "Movie watch is a project that made me practice <span class=\"marker\">local storage</span>, third party API calls,promises, and data manupilation.",
         link: "https://movie-watchlist-laila19t.netlify.app/",
         image: watchlist
     },
     {
         name: "Tinder for dogs",
-        description: "I had a lot of laughs while making this project, but overall it really helped me understand the concept of classes and objects in JavaScript.",
+        description: "I had a lot of laughs while making this project, but overall it really helped me understand the concept of <span class=\"marker\">classes</span> and objects  in JavaScript.",
         link: "https://tindog-laila19t.netlify.app/",
         image: dogsTinder
     },
     {
         name: "Restaurant ordering app",
-        description: "Working with this small web app helped me learn all about event.target, dealing with forms, and having multiple reactive components on the screen.",
+        description: "Working with this small web app helped me learn all about <span class=\"marker\">event.target</span>, dealing with forms, and having multiple reactive components on the screen.",
         link: "https://restaurant-laila19t.netlify.app/",
         image: restaurant
     },
