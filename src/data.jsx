@@ -37,7 +37,7 @@ export const reactApps = [
     },
     {
         name: "Quizzical",
-        description: "Quizzical was a big learning curve for me, I got to practice several<span class=\"marker\"> React hooks</span> that were alot of fun.",
+        description: "Quizzical was a big learning curve for me, I got to practice several <span class=\"marker\">React hooks </span>that were alot of fun.",
         link: "https://quizzical-laila19t.netlify.app/",
         image: quizzical
     },
