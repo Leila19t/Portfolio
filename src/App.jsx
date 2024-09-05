@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import Header from './sections/Header'
-import Home from './sections/Home'
-import Projects from './sections/Projects'
-import About from './sections/About'
-import Contact from './sections/Contact'
-import Footer from './sections/Footer'
+import Header from './views/Header'
+import Home from './views/Home'
+import Projects from './views/Projects'
+import About from './views/About'
+import Contact from './views/Contact'
+import Footer from './views/Footer'
 
 export default function App() {
 
