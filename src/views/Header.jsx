@@ -22,6 +22,7 @@ export default function Header() {
                     Contact me
                 </HashLink>
                 <a className="resume-btn hidden" href={CV} download="CV.pdf">View resume <HiOutlinePaperClip/></a>
+                <a className="resume-btn hidden" href={'https://player.onirix.com/projects/9d823a933f3446d2a88338f33a067656/webar?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQyOTExLCJwcm9qZWN0SWQiOjg3NTkwLCJyb2xlIjozLCJpYXQiOjE3MjU0MzIzOTZ9.hlTaF5Jrwxt1qgX02zSISGSBR1DjNRTj-7aQZUcd3cs&background=alpha&preview=false&hide_controls=false&ar_button=false'} >Business Card <HiOutlinePaperClip/></a>
             </div>
         </nav>
     )
